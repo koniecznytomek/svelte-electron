@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>
+		const ipc = require("electron").ipcRenderer;
+	</script>
+	
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-cc4636c6.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-b98260c5.js">
+		<link rel="modulepreload" href="/./_app/layout.svelte-6bef5c22.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-b7fb6f9b.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-cc4636c6.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/layout.svelte-6bef5c22.js"),
+						import("/./_app/pages/index.svelte-b7fb6f9b.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+<body>
+<div id="svelte">
+
+
+<h1>test</h1>
+
+
+
+	
+</div>
+</body>
+</html>
